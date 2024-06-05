@@ -1,0 +1,49 @@
+.leftside{
+    flex: 1;
+    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(22, 102, 206); /* Ensure text is visible over the image */
+    padding: 20px;
+    text-align: center;
+}
+
+.rightside{
+    background-color: rgb(17, 184, 184);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+
+}
+/* Container that holds both left and right sections */
+.mainContainer {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left container for the image */
+.left-container {
+ 
+}
+
+/* Right container for the login form */
+.right-container {
+ 
+}
+
+/* Style for the login form */
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
