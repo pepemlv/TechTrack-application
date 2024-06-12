@@ -4,7 +4,7 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA-3XLthbm_3flQeVM9cuVI5gzdpvKrDFs",
+    apiKey: "##########################3",
     authDomain: "my-app-27069.firebaseapp.com",
     projectId: "my-app-27069",
     storageBucket: "my-app-27069.appspot.com",
@@ -14,7 +14,11 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+<<<<<<< HEAD:src/firebase.js
 const db = getFirestore(app);
 
 export { auth, db };
 
+=======
+export { db, auth };
+>>>>>>> b0d27642d58184781ac18e770eb5d54b5d3ce1bc:src/firebase/FirebaseConfig.js
