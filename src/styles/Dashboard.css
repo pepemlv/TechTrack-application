@@ -1,12 +1,44 @@
-.mainDashboard{
-    background-color: blue
-};
 
+.dashleft{
+    flex: 1;
+    background-image: inherit;
 
-p{
-    background-color: brown;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(22, 102, 206); 
+    padding: 20px;
+    text-align: center;
+  background-color: bisque;
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: rgb(56, 55, 7); /* Set text color for better visibility against the background image */
 }
 
 .dashright{
-    background-color: blanchedalmond;
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+   background-color: rgb(193, 248, 248);
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: rgb(27, 14, 14); /* Set text color for better visibility against the background image */
+
+}
+/* Container that holds both left and right sections */
+.mainDashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.mainhead{
+    background-color: rgb(26, 243, 243);
 }

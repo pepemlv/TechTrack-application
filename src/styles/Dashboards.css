@@ -1,0 +1,100 @@
+/* General styles for the entire dashboard */
+.mainDashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style for the mainhead */
+  .mainhead {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Space below the mainhead for the main dashboard content */
+  .mainDashboardContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px; /* Adjust based on the height of the mainhead */
+    padding: 20px;
+  }
+  
+  /* Style for the left container */
+  .dashleft {
+    flex: 1;
+    margin-right: 10px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+   
+  }
+  
+  /* Style for the right container */
+  .dashright {
+    flex: 1;
+    margin-left: 10px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Additional styling for inputs and buttons */
+  input {
+    display: block;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the document list */
+  ul {
+    list-style: none;
+    padding: 0;
+   
+  }
+  
+  li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #2e0e0e;
+    border-radius: 4px;
+  
+  }
+  
+  li button {
+    margin-left: 10px;
+    background-color: blueviolet;
+    
+  }

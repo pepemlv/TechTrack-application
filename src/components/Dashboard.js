@@ -26,13 +26,13 @@ const Dashboard = () => {
     <div className='mainDashbaord'>
 
       <div className="mainhead">
-        <p>jfhjjdshjhf  mainhead</p>
-        <h2>Welcome, {currentUser ? currentUser.email : 'User'}!</h2>
+        
+        <h2>Welcome, to your DashBord  {currentUser ? currentUser.email : 'User'}!</h2>
       </div>
 
       <div className="mainDashboardContent">
         <div className="dashleft">
-          <p>jfhjjdshjhf  dashleft</p>
+          <p><h3>Please enter your Daily task</h3></p>
           <input
             type="date"
             value={newDocument.date}
@@ -60,7 +60,7 @@ const Dashboard = () => {
           <button onClick={handleAdd}>Add Document</button>
         </div>
         <div className="dashright">
-          <p>jfhjjdshjhf  dashright</p>
+          <p><h2>List of Data entry</h2></p>
           {editingDocument && (
             <div>
               <h3>Edit Document</h3>

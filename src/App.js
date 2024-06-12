@@ -5,6 +5,7 @@ import PrivateRoute from './components/PrivateRoute';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Dashboard from './components/Dashboard';
+import MapDoc from './components/MapDoc'; // Import the MapDoc component
 import { Navigate } from 'react-router-dom';
 
 function App() {
@@ -22,6 +23,14 @@ function App() {
               </PrivateRoute>
             }
           />
+          <Route 
+            path="/map" 
+            element={
+              <PrivateRoute>
+                <MapDoc />
+              </PrivateRoute>
+            }
+          />
           <Route path="/" element={<Navigate to="/login" />} />
         </Routes>
       </AuthProvider>
@@ -30,32 +39,3 @@ function App() {
 }
 
 export default App;
-/*
-const App = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/SignUp" element={<SignUp />} />
-        <Route
-          path="/welcome"
-          element={
-            <ProtectedRoute>
-              <WelcomePage />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/form"
-          element={
-            <ProtectedRoute>
-              <FormPage />
-            </ProtectedRoute>
-          }
-        />
-      </Routes>
-    </Router>
-  );
-};
-
-export default App;*/
